@@ -13,29 +13,7 @@
         SLAM
 
 ## 设计方案
-```flow
-st=>start: 开始
-e=>end: 返回新的三维地图
-input1=>inputoutput: 输入音频
-op1=>operation: 接收并辨认用户音频
-cond1=>condition: 可辨认？
-op2=>operation: 分析音频
-cond2=>condition: 可以直接得出地点？
-op3=>operation: 返回可选地点
-cond3=>condition: 选择地点？
-output1=>inputoutput: 返回新得出的地图
-
-st->input1->op1->cond1
-cond1(yes)->op2
-cond1(no)->op1
-op2->cond2
-cond2(yes)->output1
-cond2(no)->op3->cond3
-cond3(yes)->output1
-cond3(no)->op1
-output1->e
-
-```
+![流程图](./The flow chart.png)
 
 
 ## 创新点
