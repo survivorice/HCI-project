@@ -13,7 +13,7 @@
         SLAM
 
 ## 设计方案
-![流程图](./The flow chart.png)
+![流程图](https://github.com/survivorice/HCI-project/blob/master/The%20flow%20chart.png)
 
 
 ## 创新点
