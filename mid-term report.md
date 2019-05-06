@@ -110,7 +110,7 @@
        主要是通过：1.在摄像机上添加Highlighing Renderer组件，
                   2.给要高亮显示的物体，添加Highlighter组件。
        效果图：
-       ![高亮效果图](https://github.com/survivorice/HCI-project/picture/highlighting.png)
+       ![高亮效果图](https://github.com/survivorice/HCI-project/blob/master/picture/highlighting.png)
  
  ## 未完成工作内容
    1. 关键词的提取与分析
