@@ -162,12 +162,12 @@
 - 讯飞与Unity结合，[xunfei&unity](https://blog.csdn.net/qq_15267341/article/details/52074225?tdsourcetag=s_pctim_aiomsg)
 - Unity TCP实现，[TCP&Unity](https://blog.csdn.net/qq992817263/article/details/50164931/)
 
-## 项目工作计划与分工
 
-### 项目分工
-  -张啸：语音识别测试，撰写中期报告md，ppt
-  -王力帆：语音识别，模型加载及处理，撰写中期报告md
-  -汤志彪：安卓app界面开发，撰写中期报告md
+
+## 项目分工
+  张啸：语音识别测试，撰写中期报告md，ppt
+  王力帆：语音识别，模型加载及处理，撰写中期报告md
+  汤志彪：安卓app界面开发，撰写中期报告md
      
 
 
