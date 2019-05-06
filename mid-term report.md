@@ -105,12 +105,37 @@
       
      
    ### 模型导入与处理
-       导入模型为软件学院大楼的模型。
-       处理模型决定使用Highlighting System 。
-       主要是通过：1.在摄像机上添加Highlighing Renderer组件，
-                  2.给要高亮显示的物体，添加Highlighter组件。
-       效果图：
-       ![高亮效果图](https://github.com/survivorice/HCI-project/blob/master/picture/highlighting.png)
+   
+   #### 对问题的发现和解决
+   导入模型为软件学院大楼的模型，与预期设想的不太一样，软件学院大楼模型为一个整体，而并非由小部件组合而成，这使得原来想利用unity中tag来进行辨别的方法无法实现
+   
+   
+   应对该问题，决定利用一个被预制为透明的cube来标识人物所处位置
+   
+   
+   经过搜索边缘高亮，选中了两个Unity Assert Store中的插件，分别是Outline Effect和Highlighting System
+   
+   
+   实验后发现Outline Effect有如下问题：
+   - 边缘有些过于粗糙
+   - 当cube的alpha通道置为0时，边缘高亮效果会消失
+   
+   
+   而Highlight System对比Outline Effect则优异的多，效果也符合全体组员的预期
+   
+   
+   因此，处理边缘高亮决定使用Highlighting System
+       
+   #### 处理流程
+   - 在摄像机上添加Highlighing Renderer组件
+   - 为HighLight（目标cube），添加Highlighter组件
+   - 在收到tag（目标位置）后，根据代码中的信息变化HighLight的transform信息，从而从肉眼效果上体现出高亮
+      
+  ![高亮效果图](https://github.com/survivorice/HCI-project/blob/master/picture/highlighting.png)
+  
+  #### 一些不足
+  - 模型除了标准的room外，有类似半圆的平台，而预设的cube并不能完美描绘出外轮廓
+  - transform信息需要手动调整，期望在之后想出合适的自动化方式
  
  ## 未完成工作内容
    1. 关键词的提取与分析
