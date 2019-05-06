@@ -146,10 +146,11 @@
 
 #### app应用中添加语音识别
    在app应用中添加输入语音按钮与输出文本框，对按钮事件进行绑定
-
+![应用界面](https://github.com/survivorice/HCI-project/blob/master/picture/app1.3.jpg)
 #### app应用添加退出事件
    添加退出app事件
 
+#### 生成导出现版本的apk包
    
  
  ## 未完成工作内容
